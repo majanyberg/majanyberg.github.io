@@ -1,4 +1,4 @@
-// Function to toggle the dropdown menu
+// Toggle dropdown menu function
 function toggleDropdownMenu() {
     var dropdownMenu = document.getElementById('dropdownMenu');
     var hamburgerIcon = document.querySelector('.hamburger-icon');
@@ -14,7 +14,7 @@ function toggleDropdownMenu() {
     }
 }
 
-// Function to handle clicks outside the dropdown menu
+// Handle clicks outside dropdown menu function
 function handleOutsideClick(event) {
     var dropdownMenu = document.getElementById('dropdownMenu');
     var hamburgerIcon = document.querySelector('.hamburger-icon');
@@ -26,10 +26,9 @@ function handleOutsideClick(event) {
     }
 }
 
-// Add an event listener to the hamburger icon to stop event propagation
+// Event listener for hamburger icon click
 document.querySelector('.hamburger-icon').addEventListener('click', function(event) {
-    // Prevent the event from propagating to the document
-    event.stopPropagation();
+    event.stopPropagation(); // Prevent event from propagating to document
     toggleDropdownMenu();
 });
 

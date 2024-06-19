@@ -100,11 +100,13 @@
   width: 40px;
   margin-right: 40px;
   filter: invert(100%) brightness(200%);
-  transition: transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease; /*Safari*/
+  transition: transform 0.3s ease; /*Standard*/
 }
   
 .hamburger-icon.move-left {
-  transform: translateX(-150px);
+  -webkit-transform: translateX(-150px); /*Safari*/
+  transform: translateX(-150px); /*Standard*/
   /* Adjust this value as needed */
 }
 
